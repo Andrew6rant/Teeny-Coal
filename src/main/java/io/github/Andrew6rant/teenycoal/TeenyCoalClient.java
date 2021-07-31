@@ -17,5 +17,7 @@ public class TeenyCoalClient implements ClientModInitializer {
         registerCutout(TeenyCoal.TEENY_WALL_TORCH);
         registerCutout(TeenyCoal.TEENY_REDSTONE_TORCH);
         registerCutout(TeenyCoal.TEENY_REDSTONE_WALL_TORCH);
+        registerCutout(TeenyCoal.TEENY_SOUL_TORCH);
+        registerCutout(TeenyCoal.TEENY_SOUL_WALL_TORCH);
     }
 }

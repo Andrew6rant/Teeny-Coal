@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "teenycoal:block/teeny_soul_wall_torch"
+    },
+    "facing=north": {
+      "model": "teenycoal:block/teeny_soul_wall_torch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "teenycoal:block/teeny_soul_wall_torch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "teenycoal:block/teeny_soul_wall_torch",
+      "y": 180
+    }
+  }
+}

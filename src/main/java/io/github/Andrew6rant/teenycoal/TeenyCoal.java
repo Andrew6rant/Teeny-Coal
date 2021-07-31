@@ -37,6 +37,8 @@ public class TeenyCoal implements ModInitializer {
 	public static final TeenyWallTorch TEENY_WALL_TORCH = new TeenyWallTorch(FabricBlockSettings.of(Material.DECORATION).nonOpaque().noCollision().luminance(10), ParticleTypes.FLAME);
 	public static final TeenyRedstoneTorch TEENY_REDSTONE_TORCH = new TeenyRedstoneTorch(FabricBlockSettings.of(Material.DECORATION).nonOpaque().noCollision().luminance(4));
 	public static final TeenyRedstoneWallTorch TEENY_REDSTONE_WALL_TORCH = new TeenyRedstoneWallTorch(FabricBlockSettings.of(Material.DECORATION).nonOpaque().noCollision().luminance(4));
+	public static final TeenyTorch TEENY_SOUL_TORCH = new TeenyTorch(FabricBlockSettings.of(Material.DECORATION).nonOpaque().noCollision().luminance(8), ParticleTypes.SOUL_FIRE_FLAME);
+	public static final TeenyWallTorch TEENY_SOUL_WALL_TORCH = new TeenyWallTorch(FabricBlockSettings.of(Material.DECORATION).nonOpaque().noCollision().luminance(8), ParticleTypes.SOUL_FIRE_FLAME);
 	public static final Item TEENY_COAL = new Item(new Item.Settings().group(TeenyCoal.ITEM_GROUP));
 	public static final Item TEENY_CHARCOAL = new Item(new Item.Settings().group(TeenyCoal.ITEM_GROUP));
 
@@ -44,6 +46,7 @@ public class TeenyCoal implements ModInitializer {
 	public void onInitialize() {
 		registerTorch(Names.TEENY_TORCH, TEENY_TORCH, Names.TEENY_WALL_TORCH, TEENY_WALL_TORCH);
 		registerTorch(Names.TEENY_REDSTONE_TORCH, TEENY_REDSTONE_TORCH, Names.TEENY_REDSTONE_WALL_TORCH, TEENY_REDSTONE_WALL_TORCH);
+		registerTorch(Names.TEENY_SOUL_TORCH, TEENY_SOUL_TORCH, Names.TEENY_SOUL_WALL_TORCH, TEENY_SOUL_WALL_TORCH);
 		registerItem(Names.TEENY_CHARCOAL, TEENY_CHARCOAL);	registerFuel(TEENY_CHARCOAL, 10);
 		registerItem(Names.TEENY_COAL, TEENY_COAL);	registerFuel(TEENY_COAL, 10);
 	}
