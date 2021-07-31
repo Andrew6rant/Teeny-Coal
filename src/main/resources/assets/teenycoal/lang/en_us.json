@@ -3,5 +3,8 @@
   "block.teenycoal.teeny_redstone_torch": "Teeny Redstone Torch",
   "block.teenycoal.teeny_soul_torch": "Teeny Soul Torch",
   "item.teenycoal.teeny_coal": "Teeny Coal",
-  "item.teenycoal.teeny_charcoal": "Teeny Charcoal"
+  "item.teenycoal.teeny_charcoal": "Teeny Charcoal",
+  "item.teenycoal.teeny_stick": "Teeny Stick",
+  "item.teenycoal.soul_dust": "Soul Dust",
+  "itemGroup.teenycoal.general": "Teeny Coal"
 }

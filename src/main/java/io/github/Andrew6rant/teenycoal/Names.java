@@ -9,4 +9,6 @@ public class Names {
     public static final String TEENY_SOUL_WALL_TORCH = "teeny_soul_wall_torch";
     public static final String TEENY_COAL = "teeny_coal";
     public static final String TEENY_CHARCOAL = "teeny_charcoal";
+    public static final String TEENY_STICK = "teeny_stick";
+    public static final String SOUL_DUST = "soul_dust";
 }
