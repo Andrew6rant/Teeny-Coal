@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "teenycoal",
+  "version": "1.0",
+
+  "name": "Teeny Coal",
+  "description": "This mod adds coal and charcoal nuggets, as well as tiny redstone, soul, and regular torches",
+  "authors": [
+    "Andrew Grant (Andrew6rant)"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.Andrew6rant.teenycoal.TeenyCoal"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
