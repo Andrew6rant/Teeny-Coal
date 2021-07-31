@@ -16,12 +16,11 @@ public class TeenyWallTorch extends WallTorchBlock {
     }
     @Override
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random){
-        Direction direction = state.get(FACING);
+        Direction direction = state.get(FACING).getOpposite();
         double d = (double)pos.getX() + 0.5D;
         double e = (double)pos.getY() + 0.4D;
         double f = (double)pos.getZ() + 0.5D;
-        Direction direction2 = direction.getOpposite();
-        world.addParticle(ParticleTypes.SMOKE, d + 0.37D * (double)direction2.getOffsetX(), e + 0.22D, f + 0.37D * (double)direction2.getOffsetZ(), 0.0D, 0.0D, 0.0D);
-        world.addParticle(this.particle, d + 0.37D * (double)direction2.getOffsetX(), e + 0.22D, f + 0.37D * (double)direction2.getOffsetZ(), 0.0D, 0.0D, 0.0D);
+        world.addParticle(ParticleTypes.SMOKE, d + 0.37D * (double)direction.getOffsetX(), e + 0.22D, f + 0.37D * (double)direction.getOffsetZ(), 0.0D, 0.0D, 0.0D);
+        world.addParticle(this.particle, d + 0.37D * (double)direction.getOffsetX(), e + 0.22D, f + 0.37D * (double)direction.getOffsetZ(), 0.0D, 0.0D, 0.0D);
     }
 }

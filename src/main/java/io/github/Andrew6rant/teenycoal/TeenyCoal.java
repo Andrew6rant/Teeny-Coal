@@ -1,5 +1,7 @@
 package io.github.Andrew6rant.teenycoal;
 
+import io.github.Andrew6rant.teenycoal.block.TeenyRedstoneTorch;
+import io.github.Andrew6rant.teenycoal.block.TeenyRedstoneWallTorch;
 import io.github.Andrew6rant.teenycoal.block.TeenyTorch;
 import io.github.Andrew6rant.teenycoal.block.TeenyWallTorch;
 import net.fabricmc.api.ModInitializer;
@@ -33,14 +35,15 @@ public class TeenyCoal implements ModInitializer {
 
 	public static final TeenyTorch TEENY_TORCH = new TeenyTorch(FabricBlockSettings.of(Material.DECORATION).nonOpaque().noCollision().luminance(10), ParticleTypes.FLAME);
 	public static final TeenyWallTorch TEENY_WALL_TORCH = new TeenyWallTorch(FabricBlockSettings.of(Material.DECORATION).nonOpaque().noCollision().luminance(10), ParticleTypes.FLAME);
-	public static final TeenyTorch TEENY_REDSTONE_TORCH = new TeenyTorch(FabricBlockSettings.of(Material.DECORATION).nonOpaque().luminance(10), ParticleTypes.FLAME);
-	public static final TeenyWallTorch TEENY_REDSTONE_WALL_TORCH = new TeenyWallTorch(FabricBlockSettings.of(Material.DECORATION).nonOpaque().luminance(10), ParticleTypes.FLAME);
+	public static final TeenyRedstoneTorch TEENY_REDSTONE_TORCH = new TeenyRedstoneTorch(FabricBlockSettings.of(Material.DECORATION).nonOpaque().noCollision().luminance(4));
+	public static final TeenyRedstoneWallTorch TEENY_REDSTONE_WALL_TORCH = new TeenyRedstoneWallTorch(FabricBlockSettings.of(Material.DECORATION).nonOpaque().noCollision().luminance(4));
 	public static final Item TEENY_COAL = new Item(new Item.Settings().group(TeenyCoal.ITEM_GROUP));
 	public static final Item TEENY_CHARCOAL = new Item(new Item.Settings().group(TeenyCoal.ITEM_GROUP));
 
 	@Override
 	public void onInitialize() {
 		registerTorch(Names.TEENY_TORCH, TEENY_TORCH, Names.TEENY_WALL_TORCH, TEENY_WALL_TORCH);
+		registerTorch(Names.TEENY_REDSTONE_TORCH, TEENY_REDSTONE_TORCH, Names.TEENY_REDSTONE_WALL_TORCH, TEENY_REDSTONE_WALL_TORCH);
 		registerItem(Names.TEENY_CHARCOAL, TEENY_CHARCOAL);	registerFuel(TEENY_CHARCOAL, 10);
 		registerItem(Names.TEENY_COAL, TEENY_COAL);	registerFuel(TEENY_COAL, 10);
 	}

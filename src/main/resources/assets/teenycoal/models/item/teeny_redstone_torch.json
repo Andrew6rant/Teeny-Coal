@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "teenycoal:block/teeny_torch"
+    "layer0": "teenycoal:block/teeny_redstone_torch"
   }
 }
