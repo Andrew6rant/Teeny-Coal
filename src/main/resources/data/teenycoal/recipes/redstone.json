@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "teenycoal:teeny_redstone_dust"
+    }
+  },
+  "result": {
+    "item": "minecraft:redstone",
+    "count": 1
+  }
+}

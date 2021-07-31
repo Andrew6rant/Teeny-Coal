@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone"
+    }
+  ],
+  "result": {
+    "item": "teenycoal:teeny_redstone_dust",
+    "count": 9
+  }
+}

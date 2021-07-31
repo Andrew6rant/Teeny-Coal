@@ -43,6 +43,7 @@ public class TeenyCoal implements ModInitializer {
 	public static final Item TEENY_CHARCOAL = new Item(new Item.Settings().group(TeenyCoal.ITEM_GROUP));
 	public static final Item TEENY_STICK = new Item(new Item.Settings().group(TeenyCoal.ITEM_GROUP));
 	public static final Item SOUL_DUST = new Item(new Item.Settings().group(TeenyCoal.ITEM_GROUP));
+	public static final Item TEENY_REDSTONE_DUST = new Item(new Item.Settings().group(TeenyCoal.ITEM_GROUP));
 
 	@Override
 	public void onInitialize() {
@@ -53,5 +54,6 @@ public class TeenyCoal implements ModInitializer {
 		registerItem(Names.TEENY_COAL, TEENY_COAL);			registerFuel(TEENY_COAL, 200);
 		registerItem(Names.TEENY_STICK, TEENY_STICK);		registerFuel(TEENY_STICK, 15);
 		registerItem(Names.SOUL_DUST, SOUL_DUST);
+		registerItem(Names.TEENY_REDSTONE_DUST, TEENY_REDSTONE_DUST);
 	}
 }

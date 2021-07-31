@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "/"
+  ],
+  "key": {
+    "#": {
+      "item": "teenycoal:teeny_coal"
+    },
+    "/": {
+      "item": "teenycoal:teeny_stick"
+    }
+  },
+  "result": {
+    "item": "teenycoal:teeny_torch",
+    "count": 36
+  }
+}
