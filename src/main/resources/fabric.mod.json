@@ -14,12 +14,15 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/teenycoal/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
       "io.github.Andrew6rant.teenycoal.TeenyCoal"
+    ],
+    "client": [
+      "io.github.Andrew6rant.teenycoal.TeenyCoalClient"
     ]
   },
 
