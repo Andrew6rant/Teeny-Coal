@@ -1,15 +1,31 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "###",
-    "###"
-  ],
-  "key": {
-    "#": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "teenycoal:teeny_torch"
+    },
+    {
+      "item": "teenycoal:teeny_torch"
+    },
+    {
+      "item": "teenycoal:teeny_torch"
+    },
+    {
+      "item": "teenycoal:teeny_torch"
+    },
+    {
+      "item": "teenycoal:teeny_torch"
+    },
+    {
+      "item": "teenycoal:teeny_torch"
+    },
+    {
+      "item": "teenycoal:teeny_torch"
+    },
+    {
       "item": "teenycoal:teeny_torch"
     }
-  },
+  ],
   "result": {
     "item": "minecraft:torch",
     "count": 1

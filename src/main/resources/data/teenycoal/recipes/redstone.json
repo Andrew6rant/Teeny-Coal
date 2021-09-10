@@ -1,15 +1,31 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "###",
-    "###"
-  ],
-  "key": {
-    "#": {
-      "item": "teenycoal:teeny_redstone_dust"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "teenycoal:teeny_redstone"
+    },
+    {
+      "item": "teenycoal:teeny_redstone"
+    },
+    {
+      "item": "teenycoal:teeny_redstone"
+    },
+    {
+      "item": "teenycoal:teeny_redstone"
+    },
+    {
+      "item": "teenycoal:teeny_redstone"
+    },
+    {
+      "item": "teenycoal:teeny_redstone"
+    },
+    {
+      "item": "teenycoal:teeny_redstone"
+    },
+    {
+      "item": "teenycoal:teeny_redstone"
     }
-  },
+  ],
   "result": {
     "item": "minecraft:redstone",
     "count": 1

@@ -50,9 +50,9 @@ public class TeenyCoal implements ModInitializer {
 		registerTorch(Names.TEENY_TORCH, TEENY_TORCH, Names.TEENY_WALL_TORCH, TEENY_WALL_TORCH);
 		registerTorch(Names.TEENY_REDSTONE_TORCH, TEENY_REDSTONE_TORCH, Names.TEENY_REDSTONE_WALL_TORCH, TEENY_REDSTONE_WALL_TORCH);
 		registerTorch(Names.TEENY_SOUL_TORCH, TEENY_SOUL_TORCH, Names.TEENY_SOUL_WALL_TORCH, TEENY_SOUL_WALL_TORCH);
-		registerItem(Names.TEENY_CHARCOAL, TEENY_CHARCOAL);	registerFuel(TEENY_CHARCOAL, 200);
-		registerItem(Names.TEENY_COAL, TEENY_COAL);			registerFuel(TEENY_COAL, 200);
-		registerItem(Names.TEENY_STICK, TEENY_STICK);		registerFuel(TEENY_STICK, 15);
+		registerItem(Names.TEENY_CHARCOAL, TEENY_CHARCOAL);		registerFuel(TEENY_CHARCOAL, 220);
+		registerItem(Names.TEENY_COAL, TEENY_COAL);				registerFuel(TEENY_COAL, 220);
+		registerItem(Names.TEENY_STICK, TEENY_STICK);			registerFuel(TEENY_STICK, 15);
 		registerItem(Names.SOUL_DUST, SOUL_DUST);
 		registerItem(Names.TEENY_REDSTONE_DUST, TEENY_REDSTONE_DUST);
 	}

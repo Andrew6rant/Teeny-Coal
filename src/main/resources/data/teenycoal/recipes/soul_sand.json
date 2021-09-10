@@ -1,15 +1,31 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "###",
-    "###"
-  ],
-  "key": {
-    "#": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "teenycoal:soul_dust"
+    },
+    {
+      "item": "teenycoal:soul_dust"
+    },
+    {
+      "item": "teenycoal:soul_dust"
+    },
+    {
+      "item": "teenycoal:soul_dust"
+    },
+    {
+      "item": "teenycoal:soul_dust"
+    },
+    {
+      "item": "teenycoal:soul_dust"
+    },
+    {
+      "item": "teenycoal:soul_dust"
+    },
+    {
       "item": "teenycoal:soul_dust"
     }
-  },
+  ],
   "result": {
     "item": "minecraft:soul_sand",
     "count": 1
