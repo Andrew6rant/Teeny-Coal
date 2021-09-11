@@ -1,0 +1,11 @@
+{
+  "block.teenycoal.teeny_torch": "Minik Meşale",
+  "block.teenycoal.teeny_redstone_torch": "Minik KızılTaş Meşalesi",
+  "block.teenycoal.teeny_soul_torch": "Minik Ruh Meşalesi",
+  "item.teenycoal.teeny_coal": "Minik Kömür",
+  "item.teenycoal.teeny_charcoal": "Minik Odun Kömürü",
+  "item.teenycoal.teeny_stick": "Minik Çubuk",
+  "item.teenycoal.soul_dust": "Ruh Tozu",
+  "item.teenycoal.teeny_redstone_dust": "Minik Kızıltaş Tozu",
+  "itemGroup.teenycoal.general": "Minik Kömür"
+}
