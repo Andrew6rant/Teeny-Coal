@@ -1,0 +1,11 @@
+{
+  "block.teenycoal.teeny_torch": "Крошечный факел",
+  "block.teenycoal.teeny_redstone_torch": "Крошечный редстоуновый факел",
+  "block.teenycoal.teeny_soul_torch": "Крошечный факел душ",
+  "item.teenycoal.teeny_coal": "Крошечный уголь",
+  "item.teenycoal.teeny_charcoal": "Крошечный древесный уголь",
+  "item.teenycoal.teeny_stick": "Крошечная палка",
+  "item.teenycoal.soul_dust": "Крошечный песок душ",
+  "item.teenycoal.teeny_redstone_dust": "Крошечный редстоуновая пыль",
+  "itemGroup.teenycoal.general": "Teeny Coal"
+}
