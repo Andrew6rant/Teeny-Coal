@@ -3,6 +3,7 @@ package io.github.Andrew6rant.teenycoal.block;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.RedstoneTorchBlock;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.state.StateManager;
@@ -10,6 +11,8 @@ import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
@@ -31,5 +34,9 @@ public class TeenyRedstoneTorch extends RedstoneTorchBlock {
         if (lit) {
             world.addParticle(this.particle, d, e, f, 0.0D, 0.0D, 0.0D);
         }
+    }
+    @Override
+    public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
+        return VoxelShapes.cuboid(0.375f, 0f, 0.375f, 0.625f, 0.4375f, 0.625f);
     }
 }
