@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "teenycoal",
-  "version": "1.1.0-1.16.x-1.17.x-1.18.x",
+  "version": "1.1.1-1.16.x-1.17.x-1.18.x-1.19-experimental-snapshot",
 
   "name": "Teeny Coal",
   "description": "This mod adds miniature versions of coal and charcoal, as well as tiny redstone, soul, and regular torches",
@@ -32,7 +32,8 @@
     "minecraft": [
       "1.16.x",
       "1.17.x",
-      "1.18.x"
+      "1.18.x",
+      "1.19.x"
     ],
     "java": ">=8"
   },
