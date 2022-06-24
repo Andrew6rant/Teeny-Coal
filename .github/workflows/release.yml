@@ -21,8 +21,8 @@ jobs:
         run: ./gradlew build
       - uses: Kir-Antipov/mc-publish@v3.0
         with:
-          curseforge-id: 515415
-          modrinth-id: 7pbXPVrB
+          curseforge-id: 510346
+          modrinth-id: 8dyofj7U
           modrinth-featured: true
           modrinth-unfeature-mode: intersection
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
