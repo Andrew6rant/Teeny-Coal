@@ -7,19 +7,18 @@ import net.minecraft.particle.ParticleEffect;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
-import java.util.Random;
-
 public class TeenyWallTorch extends WallTorchBlock {
-    public TeenyWallTorch(Settings settings, ParticleEffect particle){
+    public TeenyWallTorch(Settings settings, ParticleEffect particle) {
         super(settings, particle);
     }
     @Override
-    public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random){
+    public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
         Direction direction = state.get(FACING).getOpposite();
         double d = (double)pos.getX() + 0.5D;
         double e = (double)pos.getY() + 0.4D;
