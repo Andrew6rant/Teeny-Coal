@@ -6,14 +6,14 @@
   ],
   "key": {
     "#": {
-      "item": "teenycoal:teeny_energized_redstone_dust"
+      "item": "energized_redstone:teeny_energized_redstone_dust"
     },
     "/": {
       "item": "teenycoal:teeny_stick"
     }
   },
   "result": {
-    "item": "teenycoal:teeny_energized_redstone_torch",
+    "item": "energized_redstone:teeny_energized_redstone_torch",
     "count": 1
   }
 }

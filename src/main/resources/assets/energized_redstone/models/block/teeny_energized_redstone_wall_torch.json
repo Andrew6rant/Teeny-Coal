@@ -1,6 +1,6 @@
 {
   "parent": "teenycoal:block/template_teeny_wall_torch",
   "textures": {
-    "torch": "teenycoal:block/teeny_energized_redstone_torch"
+    "torch": "energized_redstone:block/teeny_energized_redstone_torch"
   }
 }

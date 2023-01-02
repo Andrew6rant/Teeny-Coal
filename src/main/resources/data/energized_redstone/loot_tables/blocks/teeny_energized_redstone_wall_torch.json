@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "teenycoal:teeny_energized_redstone_torch",
+          "name": "energized_redstone:teeny_energized_redstone_torch",
           "conditions": [
             {
               "condition": "minecraft:survives_explosion"

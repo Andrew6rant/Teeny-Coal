@@ -22,8 +22,8 @@ public class EnergizedRedstoneCompat {
     public static void energizedRedstoneCompat() {
         //TeenyRedstoneTorch TEENY_ENERGIZED_REDSTONE_TORCH = new TeenyEnergizedRedstoneTorch(FabricBlockSettings.of(Material.DECORATION).nonOpaque().noCollision().luminance(10));
         //TeenyRedstoneWallTorch TEENY_ENERGIZED_REDSTONE_WALL_TORCH = new TeenyEnergizedRedstoneWallTorch(FabricBlockSettings.of(Material.DECORATION).nonOpaque().noCollision().luminance(10));
-        registerTorch(Names.TEENY_ENERGIZED_REDSTONE_TORCH, TEENY_ENERGIZED_REDSTONE_TORCH, Names.TEENY_ENERGIZED_REDSTONE_WALL_TORCH, TEENY_ENERGIZED_REDSTONE_WALL_TORCH);
-        registerItem(Names.TEENY_ENERGIZED_REDSTONE_DUST, TEENY_ENERGIZED_REDSTONE_DUST);
+        registerTorch("energized_redstone", Names.TEENY_ENERGIZED_REDSTONE_TORCH, TEENY_ENERGIZED_REDSTONE_TORCH, Names.TEENY_ENERGIZED_REDSTONE_WALL_TORCH, TEENY_ENERGIZED_REDSTONE_WALL_TORCH);
+        registerItem("energized_redstone", Names.TEENY_ENERGIZED_REDSTONE_DUST, TEENY_ENERGIZED_REDSTONE_DUST);
     }
 
     public static void energizedRedstoneClientCompat() {

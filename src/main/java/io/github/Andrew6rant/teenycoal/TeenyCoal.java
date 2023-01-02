@@ -25,25 +25,20 @@ import static io.github.Andrew6rant.teenycoal.EnergizedRedstoneCompat.energizedR
 public class TeenyCoal implements ModInitializer {
 
 	public static final ItemGroup ITEM_GROUP = FabricItemGroup.builder(new Identifier("teenycoal", "general"))
-			//.displayName(Text.literal("Example Item Group"))
 			.icon(() -> new ItemStack(TeenyCoal.TEENY_TORCH))
-			//.entries((enabledFeatures, entries, operatorEnabled) -> {
-			//	entries.add(Items.DIAMOND);
-			//})
 			.build();
 
-	//public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
-	//		new Identifier("teenycoal", "general"),
-	//		() -> new ItemStack(TeenyCoal.TEENY_TORCH));
 
-	public static void registerItem(String itemName, Item item) {
-		Registry.register(Registries.ITEM, new Identifier("teenycoal", itemName), item);
+	// Namespace would normally be hardcoded to "teenycoal", but I need to register under different namespaces for mod compatibility
+	// (if they are under "teenycoal," the log will be spammed with recipe errors since the compat mod isn't always loaded)
+	public static void registerItem(String namespace, String itemName, Item item) {
+		Registry.register(Registries.ITEM, new Identifier(namespace, itemName), item);
 		ItemGroupEvents.modifyEntriesEvent(TeenyCoal.ITEM_GROUP).register(entries -> entries.add(item));
 	}
-	public static void registerTorch(String torchName, Block torch, String wallTorchName, Block wallTorch) {
-		Registry.register(Registries.BLOCK, new Identifier("teenycoal", torchName), torch);
-		Registry.register(Registries.BLOCK, new Identifier("teenycoal", wallTorchName), wallTorch);
-		Registry.register(Registries.ITEM, new Identifier("teenycoal", torchName), new VerticallyAttachableBlockItem(torch, wallTorch, new FabricItemSettings(), Direction.DOWN));
+	public static void registerTorch(String namespace, String torchName, Block torch, String wallTorchName, Block wallTorch) {
+		Registry.register(Registries.BLOCK, new Identifier(namespace, torchName), torch);
+		Registry.register(Registries.BLOCK, new Identifier(namespace, wallTorchName), wallTorch);
+		Registry.register(Registries.ITEM, new Identifier(namespace, torchName), new VerticallyAttachableBlockItem(torch, wallTorch, new FabricItemSettings(), Direction.DOWN));
 		ItemGroupEvents.modifyEntriesEvent(TeenyCoal.ITEM_GROUP).register(entries -> entries.add(torch));
 	}
 	public static void registerFuel(Item item, int value) {
@@ -64,14 +59,14 @@ public class TeenyCoal implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		registerTorch(Names.TEENY_TORCH, TEENY_TORCH, Names.TEENY_WALL_TORCH, TEENY_WALL_TORCH);
-		registerTorch(Names.TEENY_REDSTONE_TORCH, TEENY_REDSTONE_TORCH, Names.TEENY_REDSTONE_WALL_TORCH, TEENY_REDSTONE_WALL_TORCH);
-		registerTorch(Names.TEENY_SOUL_TORCH, TEENY_SOUL_TORCH, Names.TEENY_SOUL_WALL_TORCH, TEENY_SOUL_WALL_TORCH);
-		registerItem(Names.TEENY_CHARCOAL, TEENY_CHARCOAL);	registerFuel(TEENY_CHARCOAL, 200);
-		registerItem(Names.TEENY_COAL, TEENY_COAL);			registerFuel(TEENY_COAL, 200);
-		registerItem(Names.TEENY_STICK, TEENY_STICK);		registerFuel(TEENY_STICK, 15);
-		registerItem(Names.SOUL_DUST, SOUL_DUST);
-		registerItem(Names.TEENY_REDSTONE_DUST, TEENY_REDSTONE_DUST);
+		registerTorch(Names.NAMESPACE, Names.TEENY_TORCH, TEENY_TORCH, Names.TEENY_WALL_TORCH, TEENY_WALL_TORCH);
+		registerTorch(Names.NAMESPACE, Names.TEENY_REDSTONE_TORCH, TEENY_REDSTONE_TORCH, Names.TEENY_REDSTONE_WALL_TORCH, TEENY_REDSTONE_WALL_TORCH);
+		registerTorch(Names.NAMESPACE, Names.TEENY_SOUL_TORCH, TEENY_SOUL_TORCH, Names.TEENY_SOUL_WALL_TORCH, TEENY_SOUL_WALL_TORCH);
+		registerItem(Names.NAMESPACE, Names.TEENY_CHARCOAL, TEENY_CHARCOAL);	registerFuel(TEENY_CHARCOAL, 200);
+		registerItem(Names.NAMESPACE, Names.TEENY_COAL, TEENY_COAL);			registerFuel(TEENY_COAL, 200);
+		registerItem(Names.NAMESPACE, Names.TEENY_STICK, TEENY_STICK);		registerFuel(TEENY_STICK, 15);
+		registerItem(Names.NAMESPACE, Names.SOUL_DUST, SOUL_DUST);
+		registerItem(Names.NAMESPACE, Names.TEENY_REDSTONE_DUST, TEENY_REDSTONE_DUST);
 
 		if (FabricLoader.getInstance().isModLoaded("energized_redstone")) {
 			energizedRedstoneCompat();
