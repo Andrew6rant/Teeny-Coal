@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "teenycoal:block/teeny_energized_redstone_torch_off"
+    },
+    "lit=true": {
+      "model": "teenycoal:block/teeny_energized_redstone_torch"
+    }
+  }
+}

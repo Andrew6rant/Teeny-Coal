@@ -12,4 +12,10 @@ public class Names {
     public static final String TEENY_STICK = "teeny_stick";
     public static final String SOUL_DUST = "soul_dust";
     public static final String TEENY_REDSTONE_DUST = "teeny_redstone_dust";
+
+    // Mod compat
+
+    public static final String TEENY_ENERGIZED_REDSTONE_TORCH = "teeny_energized_redstone_torch";
+    public static final String TEENY_ENERGIZED_REDSTONE_WALL_TORCH = "teeny_energized_redstone_wall_torch";
+    public static final String TEENY_ENERGIZED_REDSTONE_DUST = "teeny_energized_redstone_dust";
 }

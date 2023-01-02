@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "teenycoal:teeny_energized_redstone_dust"
+    }
+  },
+  "result": {
+    "item": "energized_redstone:energized_redstone_wire",
+    "count": 1
+  }
+}

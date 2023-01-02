@@ -7,5 +7,8 @@
   "item.teenycoal.teeny_stick": "Teeny Stick",
   "item.teenycoal.soul_dust": "Soul Dust",
   "item.teenycoal.teeny_redstone_dust": "Teeny Redstone Dust",
-  "itemGroup.teenycoal.general": "Teeny Coal"
+  "itemGroup.teenycoal.general": "Teeny Coal",
+
+  "block.teenycoal.teeny_energized_redstone_torch": "Teeny Energized Redstone Torch",
+  "item.teenycoal.teeny_energized_redstone_dust": "Teeny Energized Redstone Dust"
 }

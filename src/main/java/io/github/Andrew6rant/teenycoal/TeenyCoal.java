@@ -10,15 +10,17 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.*;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
+
+import static io.github.Andrew6rant.teenycoal.EnergizedRedstoneCompat.energizedRedstoneCompat;
 
 public class TeenyCoal implements ModInitializer {
 
@@ -70,5 +72,9 @@ public class TeenyCoal implements ModInitializer {
 		registerItem(Names.TEENY_STICK, TEENY_STICK);		registerFuel(TEENY_STICK, 15);
 		registerItem(Names.SOUL_DUST, SOUL_DUST);
 		registerItem(Names.TEENY_REDSTONE_DUST, TEENY_REDSTONE_DUST);
+
+		if (FabricLoader.getInstance().isModLoaded("energized_redstone")) {
+			energizedRedstoneCompat();
+		}
 	}
 }
