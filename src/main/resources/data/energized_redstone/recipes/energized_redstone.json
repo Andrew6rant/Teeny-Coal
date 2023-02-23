@@ -13,5 +13,13 @@
   "result": {
     "item": "energized_redstone:energized_redstone_wire",
     "count": 1
-  }
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "energized_redstone"
+      ]
+    }
+  ]
 }
