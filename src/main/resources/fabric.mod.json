@@ -34,5 +34,12 @@
   },
   "suggests": {
     "energized_redstone": "*"
+  },
+  "custom": {
+    "mc-publish": {
+      "modrinth": "8dyofj7U",
+      "curseforge": 510346,
+      "loaders": ["fabric", "quilt"]
+    }
   }
 }

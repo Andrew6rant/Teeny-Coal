@@ -19,15 +19,10 @@ jobs:
         run: chmod +x ./gradlew
       - name: build
         run: ./gradlew build
-      - uses: Kir-Antipov/mc-publish@v3.0
+      - uses: Kir-Antipov/mc-publish@v3.3
         with:
-          curseforge-id: 510346
-          modrinth-id: 8dyofj7U
           modrinth-featured: true
           modrinth-unfeature-mode: intersection
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           version-type: release
-          loaders: |
-            fabric
-            quilt
